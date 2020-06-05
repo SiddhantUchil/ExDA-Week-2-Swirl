@@ -75,6 +75,33 @@ image(volcano, col = pal(20))
 image(volcano, col = p1(20))
 
 
+str(mpg)
+
+qplot(displ, hwy, data = mpg, color = drv, geom = c("point", "smooth"))
+qplot(displ, hwy, data = mpg, color = drv)
+
+qplot(y=hwy, data = mpg, color = drv)
+
+#What's this plot showing? We see the x-axis ranges from 0 to 250 and we remember that we had 234 data points in our
+# set, so we can infer that each point in the plot represents one of the hwy values (indicated by the y-axis). We've
+# created the vector myhigh for you which contains the hwy data from the mpg dataset. Look at myhigh now.
+
+myhigh
+
+qplot(drv, hwy, data = mpg, geom = "boxplot", color = manufacturer)
+
+qplot(hwy, data = mpg, fill = drv)
+
+qplot(displ, hwy, data = mpg, facets = . ~ drv)
+
+qplot(hwy, data = mpg, facets = drv ~ ., binwidth = 2)
+
+
+
+
+
+
+
 
 
 
