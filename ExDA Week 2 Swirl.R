@@ -97,6 +97,7 @@ qplot(displ, hwy, data = mpg, facets = . ~ drv)
 qplot(hwy, data = mpg, facets = drv ~ ., binwidth = 2)
 
 
+qplot(displ, hwy, data = mpg, geom = c("point", "smooth"), facets = . ~ drv)
 
 
 
